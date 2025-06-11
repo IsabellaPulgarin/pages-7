@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center;">Contacts</h1>
+        <nav>
+            <ul class="lista-button">
+                <li><a href="index.htm">Main page</a></li>
+                <li><a href="productos.htm">Products</a></li>
+                <li><a href="blog.htm">Blogs</a></li>
+                <li><a href="contacto.htm">Contacts</a></li>
+                <li><a href="sobre-mi.htm">About Me</a></li>
+                <li><a href="etiquetas.htm">Labels</a></li>
+                <li><a href="galeria.htm">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="id">
+        <form action="enviar.php" method="post">
+            <fieldset>
+                <legend>Contáctanos</legend>
+
+                <!-- Nombre -->
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+                <small>Escribe tu nombre completo.</small><br><br>
+
+                <!-- Correo electrónico -->
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+                <small>Ingresa un correo válido, por ejemplo: usuario@ejemplo.com</small><br><br>
+
+                <!-- Asunto -->
+                <label for="asunto">Asunto:</label><br>
+                <input type="text" id="asunto" name="asunto" required>
+                <small>¿Sobre qué deseas hablar?</small><br><br>
+
+                <!-- Mensaje -->
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                <small>Escribe tu mensaje de forma clara y breve. <abbr title="por ejemplo">ej.</abbr>: "Tengo un problema con mi cuenta."</small><br><br>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        
+    </main>
+    
+</body>
+</html>
